@@ -1,0 +1,7 @@
+[
+{"name":"web-narrow","access":"Allow","protocol":"Tcp","sourceAddressPrefix":"192.168.1.0/24","destinationPortRange":"443","priority":400,"direction":"Inbound"},
+{"name":"block-internal","access":"Deny","protocol":"Tcp","sourceAddressPrefix":"10.0.0.0/8","destinationPortRange":"1-1024","priority":100,"direction":"Inbound"},
+{"name":"dead-web","access":"Allow","protocol":"Tcp","sourceAddressPrefix":"10.1.0.0/16","destinationPortRange":"80","priority":200,"direction":"Inbound"},
+{"name":"web-broad","access":"Allow","protocol":"Tcp","sourceAddressPrefix":"192.168.0.0/16","destinationPortRange":"443","priority":300,"direction":"Inbound"},
+{"name":"public-ssh","access":"Allow","protocol":"Tcp","sourceAddressPrefix":"*","destinationPortRange":"22","priority":500,"direction":"Inbound"}
+]
