@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=75,<83"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ruleshadow"
+version = "0.1.0"
+description = "Local firewall rule containment analysis"
+requires-python = ">=3.10"
+license = "MIT"
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest==8.3.5", "hypothesis==6.131.9"]
+
+[project.scripts]
+ruleshadow = "ruleshadow.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
