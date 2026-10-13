@@ -143,13 +143,4 @@ rg -n -i 'requests|urllib|httpx|aiohttp|socket|boto3|botocore|subprocess|os\.sys
 Installing development dependencies and running GitHub Actions may access
 package registries; analyzing an export never does.
 
-## Planned commercial direction
-
-The proposed product has a free CLI for up to 50 rules and one format, with a
-paid tier unlocking larger rule sets, more formats, and CI integration that
-fails a pipeline on **new** shadowed or overly-permissive findings relative to
-a baseline. This MVP enables all three formats without limits. Licensing,
-payments, commercial gates, baseline storage, and CI failure mode are future
-work; no payment or licensing infrastructure is implemented.
-
 MIT licensed. See [TODO.md](TODO.md) for scope and follow-up work.
